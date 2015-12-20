@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-bootstrap-angularjs",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "hanqilin <hqlkylin@gmail.com>"
+  ],
+  "license": "ISC",
+  "moduleType": [],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "js/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.8",
+    "angular-route": "~1.4.8"
+  }
+}
