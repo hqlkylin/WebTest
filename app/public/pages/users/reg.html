@@ -9,7 +9,7 @@
                         <div class="input-group-addon">
                             <span class="glyphicon glyphicon-user"></span>
                         </div>
-                        <input class="form-control" ng-pattern="/[\u4e00-\u9fa5]/" ng-required placeholder="请输入中文" type="text" id="username" name="username" ng-model="user.username">
+                        <input value="韩麒麟" class="form-control" ng-pattern="/[\u4e00-\u9fa5]/" ng-required placeholder="请输入中文" type="text" id="username" name="username" ng-model="user.username">
                     </div>
                     <div class="help-block col-sm-4" ng-show="userform.username.$dirty && userform.username.$invalid">
                         <span class="text-danger" ng-show="userform.username.$error.required">请填写用户名</span>
@@ -22,7 +22,7 @@
                         <div class="input-group-addon">
                             <span class="glyphicon glyphicon-envelope"></span>
                         </div>
-                        <input class="form-control" ng-required="" placeholder="请输入邮箱" type="email" id="email" name="email" ng-model="user.email">
+                        <input class="form-control" ng-required="" placeholder="请输入邮箱" type="email" id="email" name="email" ng-model="user.email" value="qilin1011@sohu.com">
                     </div>
                     <div class="help-block col-sm-4" ng-show="userform.email.$dirty && userform.email.$invalid">
                         <span class="text-danger" ng-show="userform.email.$error.required">请正确输入邮箱</span>
@@ -35,7 +35,7 @@
                         <div class="input-group-addon">
                             <span class="glyphicon glyphicon-lock"></span>
                         </div>
-                        <input class="form-control" ng-minlength="6" ng-maxlength="12" placeholder="请输入6到12位密码" type="password" ng-required id="password" name="password" ng-model="user.password">
+                        <input value="123456" class="form-control" ng-minlength="6" ng-maxlength="12" placeholder="请输入6到12位密码" type="password" ng-required id="password" name="password" ng-model="user.password">
                     </div>
                     <div class="help-block col-sm-4" ng-show="userform.password.$dirty && userform.password.$invalid">
                         <span class="text-danger" ng-show="userform.password.$error">请正确输入密码</span>
@@ -47,19 +47,19 @@
                         <div class="input-group-addon">
                             <span class="glyphicon glyphicon-lock"></span>
                         </div>
-                        <input class="form-control" ng-minlength="6" ng-maxlength="12"  placeholder="请输入6到12位密码" ng-required type="password" id="repassword" name="repassword" ng-model="user.repassword">
+                        <input value="123456" class="form-control" ng-minlength="6" ng-maxlength="12"  placeholder="请输入6到12位密码" ng-required type="password" id="repassword" name="repassword" ng-model="user.repassword">
                     </div>
                     <div class="help-block col-sm-4" ng-show="userform.repassword.$dirty && userform.repassword.$invalid">
                         <span class="text-danger" ng-show="userform.repassword.$error">请正确输入密码</span>
                     </div>
                 </div>
             </div>
-
-        </form>
-        <div class="panel-footer clearfix">
-            <div class="col-sm-offset-5 col-sm-1">
-                <button type="submit" class="btn btn-primary btn-lg btn-enter" ng-disabled="userform.$invalid || userform.password!=userform.repassword">注册</button>
+            <div class="panel-footer clearfix">
+                <div class="col-sm-offset-5 col-sm-1">
+                    <button type="submit" class="btn btn-primary btn-lg btn-enter" ng-disabled="userform.$invalid">注册</button>
+                </div>
             </div>
-        </div>
+        </form>
+
     </div>
 </div>

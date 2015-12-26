@@ -51,10 +51,19 @@
     app.controller("NavBarCtrl", function ($scope) {
 
     });
-    app.controller("RegCtrl", function ($scope) {
+    app.controller("RegCtrl", function ($scope,$http,$location) {
         $scope.title="注册";
         $scope.save= function () {
             console.log("save");
+            $http({
+                url:'/users/reg',
+                method:'post',
+                data: $scope.user
+            }).success(function (user) {
+                $location.path("users/login");
+            }).error(function (error) {
+
+            })
         }
     });
     app.controller("LoginCtrl", function ($scope) {
